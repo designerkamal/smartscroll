@@ -430,7 +430,7 @@
       // If the breakpoint option is set
       if (validBreakPoint) {
         // Run the following whenever the window is resized
-        $(window).bind('resize', function () { // eslint-disable-line func-names
+        $(window).bind('load resize', function () { // eslint-disable-line func-names
           // If the window width is below the breakpoint,
           // Unbind scroll
           if ($(window).width() < options.breakpoint) {
